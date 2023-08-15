@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://i0.wp.com/www.flutterbeads.com/wp-content/uploads/2021/11/set-background-image-flutter-hero.jpeg?fit=1920%2C1280&ssl=1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.game{
+    width: 600px;
+    height: 215px;
+    position: relative;
+    border: 3px dashed #000000;
+    margin: 200px auto;
+    background-color: #ccb125;
+}
+
+.text{
+    position: relative;
+    
+}
+
+.text h1{
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    left: 25px;
+    color: blue;
+   
+    
+}
+
+.foto img{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    right: 0;
+    border-radius: 5px;
+}
+
+.dino_gif{
+    position: relative;
+}
+
+.dino_gif img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 5px; bottom: -120px;
+    border-radius: 50%;
+}
+
+#dino{
+    width: 90px;
+    height: 70px;
+    background-image: url(./t_rex.png);
+    background-size: auto 70px;
+    position: relative;
+    top: 143px;
+}
+
+#cactus{
+    width: 50px;
+    height: 40px;
+    position: relative;
+    top: 100px; left: 570px;
+    background-image: url(./cactus2.png);
+    background-size: 60px 40px;
+    animation: cactus 1.5s infinite linear;
+}
+
+.jump{
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump{
+    0% {
+        top: 143px;
+    }
+    30% {
+        top: 115px;
+    }
+    50% {
+        top: 70px;
+    }
+    80% {
+        top: 115px;
+    }
+    100% {
+        top: 143px;
+    }
+}
+
+@keyframes cactus{
+    0% {
+        left: 600px;
+    }
+    100% {
+        left: -20px;
+    }
+}
